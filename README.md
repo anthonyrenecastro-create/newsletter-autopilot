@@ -34,11 +34,14 @@ The full daily issue stays subscriber-only. The free preview is the funnel.
 
 ```
 src/
-  index.ts            Entry point / scheduler wiring
+  index.ts            Entry point — ingest → preview → (review gate) → publish
+  config.ts           Env-based config (never commit secrets)
+  shopify/
+    client.ts       Minimal Admin REST client + connection check
   pipeline/
     ingest.ts       Step 1 — fetch today's draft (stub)
     preview.ts      Step 2 — AI-written free preview (stub)
-    publish.ts      Step 3 — hand off to Shopify (stub)
+    publish.ts      Step 3 — publish preview as a Shopify blog article
 docs/
   architecture.md   Components, data flow, integrations
 ```
@@ -67,4 +70,6 @@ docs/
 
 ## Status
 
-Scaffold only — pipeline stages are stubs. No secrets, no deploys.
+Publish step implemented and typechecked (`tsc --noEmit` clean). Ingest and
+AI preview are still stubs. No live Shopify calls made yet — waiting on the
+custom app's Admin API token to run the connection check.
