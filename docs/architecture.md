@@ -2,15 +2,14 @@
 
 ## Goal
 
-Run a two-tier daily newsletter with minimum manual effort:
+Run a free daily newsletter with minimum manual effort:
 
-1. **Paid tier (you):** the full daily newsletter, written by Zebulon, published
-   through Shopify to paying subscribers.
-2. **Free tier (automated):** an AI-written preview edition generated from each
-   day's draft, published free as the top-of-funnel teaser.
+The newsletter is fully free and open. Zebulon writes the full daily issue;
+this app automates an AI-written preview edition generated from each day's
+draft, published free as the public edition.
 
-Shopify owns payments and publication. This app owns the automation between
-"draft exists" and "free preview published".
+Shopify hosts publication (the `news` blog). This app owns the automation
+between "draft exists" and "edition published". There is no paid tier.
 
 ## Components
 

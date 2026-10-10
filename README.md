@@ -66,7 +66,7 @@ docs/
 - [ ] Implement ingest → preview → publish pipeline
 - [ ] Daily scheduler (cron / hosted job)
 - [ ] Preview review/approval step before auto-publish
-- [ ] Metrics: free → paid conversion tracking
+- [ ] Metrics: readership of the free editions
 
 ## Status
 
